@@ -1,17 +1,121 @@
+const tpPrototype = {
+        name: "50TP prototyp",
+        avgDamage: 440,
+        healthPool: 1500,
+        reloadTime: 13.62,
+    },
+    tpMarkowskiego = {
+        name: "50TP prototyp",
+        avgDamage: 420,
+        healthPool: 1450,
+        reloadTime: 12.18,
+    },
+    proggettoM35 = {
+        name: "Progetto M35 mod.46",
+        avgDamage: 240,
+        healthPool: 1400,
+        reloadTime: 1,
+    },
+      
+    p44Pantera = {
+        name: "P.44 Pantera",
+        avgDamage: 240,
+        healthPool: 1300,
+        reloadTime: 1,
+    },
+      tigerII = {
+          name: "Tiger II",
+          avgDamage: 320,
+          healthPool: 1500,
+          reloadTime: 9.97,
+      },
+      vk100P = {
+          name: "VK 100.01 (P)",
+          avgDamage: 440,
+          healthPool: 1700,
+          reloadTime: 14.38,
+      },
+      vk168P = {
+          name: "VK 168.01 (P)",
+          avgDamage: 440,
+          healthPool: 1700,
+          reloadTime: 14.38,
+      },
+       mauerBrecher = {
+          name: "Mauerbrecher",
+          avgDamage: 440,
+          healthPool: 1700,
+          reloadTime: 14.38,
+      },
+      
+      lowe = {
+          name: "Löwe",
+          avgDamage: 320,
+          healthPool: 1650,
+          reloadTime: 11.51,
+      },
+      vk4502 = {
+          name: "VK 45.02 (P) Ausf. A",
+          avgDamage: 320,
+          healthPool: 1570,
+          reloadTime: 9.68,
+      },
+      
+      panther88 = {
+          name: "Panther mit 8,8 cm L/71",
+          avgDamage: 240,
+          healthPool: 1500,
+          reloadTime: 7.67,
+      },
+      panzer58 = {
+          name: "Panzer 58 Mutz",
+          avgDamage: 240,
+          healthPool: 1300,
+          reloadTime: 7.67,          
+      },
+      
+      indienPanzer = {
+          name: "Indien-Panzer",
+          avgDamage: 240,
+          healthPool: 1300,
+          reloadTime: 6.9,
+      },
+      pantherII = {
+          name: "Panther II",
+          avgDamage: 240,
+          healthPool: 1500,
+          reloadTime: 6.62,
+      },
+      
+      m4190 = {
+          name: "leKpz M 41 90 mm",
+          avgDamage: 240,
+          healthPool: 1100,
+          reloadTime: 6.33,
+      },
+      
+      hwk12 = {
+          name: "HWK 12",
+          avgDamage: 240,
+          healthPool: 1100,
+          reloadTime: 7.54,
+      }
+
+
+
 let tankObject = {
     "Poland": {
-        "Heavy Tanks": ["50TP prototyp", "53TP Markowskiego"]
+        "Heavy Tanks": [tpPrototype.name, tpMarkowskiego.name]
     },
     "Italy": {
-        "Medium Tanks": ["Progetto M35 mod. 46", "P.44 Pantera"]
+        "Medium Tanks": [proggettoM35.name, p44Pantera.name]
     },
     "Germany": {
-        "Heavy Tanks": ["Tiger II", "VK 100.01 (P)", "VK 168.01 (P)", "Löwe", "VK 45.02 (P) Ausf. A"],
-        "Medium Tanks": ["Panther mit 8,8 cm L/71", "Panzer 58 Mutz",
-            "Indien-Panzer",
-            "Panther II"],
-        "Light Tanks": ["leKpz M 41 90 mm", "HWK 12"],
-        "Tank Destroyers": ["Ferdinand", "Kanonenjagdpanzer", "Rheinmetall Skorpion G", "Jagdpanther II", "8,8 cm Pak 43 Jagdtiger", "Rhm.-Borsig Waffenträger"]
+        "Heavy Tanks": [tigerII.name, vk100P.name, vk168P.name, mauerBrecher.name, lowe.name, vk4502.name],
+        "Medium Tanks": [panther88.name, panzer58.name, indienPanzer.name,
+            pantherII.name],
+        "Light Tanks": [m4190.name, hwk12.name],
+        "Tank Destroyers": ["Ferdinand", "Kanonenjagdpanzer", "Rheinmetall Skorpion G", "Jagdpanther II", "8,8 cm Pak 43 Jagdtiger", "Rhm.-Borsig Waffenträger", "Kanonenjagdpanzer 105"]
     },
     "France": {
         "Heavy Tanks": ["AMX 50 100", "AMX M4 mle.49", "AMX 65 t", "Somua SM", "FCM 50 t"],
